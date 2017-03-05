@@ -11,7 +11,7 @@ public class Fraction {
 
     public Fraction plus(Fraction fraction) {
         if (fraction.integerValue != 0){
-            return fraction;
+            return new Fraction(this.integerValue + fraction.integerValue);
         }
         else return this;
     }
